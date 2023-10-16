@@ -1,12 +1,14 @@
-def linear_search_product(product_list, target_product):
-    indices = []
-    for i in range(len(product_list)):
-        if product_list[i] == target_product:
-            indices.append(i)
-    return indices
+class player:
+  def play(self):
+       print(" The player is playing cricket.")
+class Batsman(player):
+  def play(self):
+       print(" The batsman is batting.")
+class Bowler(player):
+  def play(self):
+       print(" The bowler is bowling.")
+batsman= Batsman()
+bowler= Bowler()
 
-# Example usage:
-products = ["Apple", "Banana", "Orange", "Apple", "Grape"]
-target = "Apple"
-result = linear_search_product(products, target)
-print("Indices of '{}' in the list: {}".format(target, result))
+batsman.play()
+bowler.play()
